@@ -1,5 +1,46 @@
 $grid__bp-md: 768;
+$grid__bp-lg: 992;
 $grid__cols: 12;
+
+$map-grid-props: ('-sm': 0, '-md': $grid__bp-md, '-lg': $grid__bp-lg);
+
+@mixin create-mq($breakpoint) {
+  @if($breakpoint == 0) {
+    @content;
+  } @else {
+    @media screen and (min-width: $breakpoint *1px) {
+      @content;
+    }
+  }
+}
+
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+  @include create-mq($breakpoint) {
+    @for $i from 1 through $grid-cols {
+      &__col#{$modifier}-#{$i} {
+        flex-basis: (100 / ($grid-cols / $i) ) * 1%;
+      }
+    }
+  }
+}
+
+@mixin create-circle($width, $color) {
+  width: $width;
+  height: $width;
+  background: $color;
+  -webkit-border-radius: $width/2;
+     -moz-border-radius: $width/2;
+          border-radius: $width/2;
+}
+
+body{
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
 
 .container {
   max-width: $grid__bp-md * 1px;
@@ -13,32 +54,102 @@ $grid__cols: 12;
     flex-wrap: wrap;
     width: 100%;
   }
-  @for $i from 1 through $grid__cols {
-    &__col-#{$i} {
-      flex-basis: (100 / ($grid__cols / $i) ) * 1%;
-    }
+  @each $modifier , $breakpoint in $map-grid-props {
+    @include create-col-classes($modifier, $grid__cols, $breakpoint);
   }
 }
 
-//Styling of grid for demostration purposes
 .container {
-  background-color: #88d8b0;
-  padding: 10px;
-  box-sizing: border-box;
+  background-color: #FFFFFF;
   &__row {
-    background-color: #ffeead;
+    background-color: #FFFFFF;
+    &.nested {
+      background-color: #ffcc5c;
+    }
   }
+
   @at-root {
     [class*='container__col-'] {
+      &.higher {
+        min-height: 60px;
+      }
       width: 150px;
-      height: 30px;
-      background-color: #ff6f69;
-      outline: 1px solid #ffcc5c;
-      margin: 10px 0;
+      min-height: 30px;
+      background-color: #FFFFFF;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: space-around;
     }
   }
 }
 
+.article{
+	background-color: #78a1e2;
+	&__img {
+		background-color: #1f293a;
+		width: 100%;
+		height: 300px;
+		display: flex;
+	}
+	&__sidebar {
+		background-color: #ff6f69;
+		height: 100vh;
+		width:100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
+
+.content{
+	background-color: #1f293a;
+	&__profile{
+		&__descr{
+			width: 100%;
+			text-align: center;
+			color: #FFFFFF;
+			display: block;
+			p{
+				color: #ffe9e8;
+			}
+			p.subtitle{
+				font-size: medium;
+				line-height: 10px;
+			}
+			p.subsubtitle{
+				font-size: small;
+				line-height: 10px;
+			}
+		}		
+		&__img{
+			@include create-circle(150px, #1f293a);
+			margin-top: 75px;
+			margin-bottom: 0px;
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__nav{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		margin-left: 0px;
+		padding-left: 0px;
+		ul {
+			width: 100%;		
+			margin-left: 0px;
+			padding-left: 0px;
+			line-height: 2.5;
+			color: #FFFFFF;
+			text-align: center;
+			font-size: large;
+		}
+		li {
+			border-bottom: 2px solid #ff918c;
+		}
+		li:last-child {
+			border-bottom: none;
+		}
+	}
+}
