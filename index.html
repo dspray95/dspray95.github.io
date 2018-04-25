@@ -10,6 +10,7 @@
 		<meta property="og:description" content="Computer Science student at York St John University. Software Developer. Designer">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/fix-div.js"></script>
 		<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
@@ -30,25 +31,121 @@
 		<div class="container--fluid">
 			<div class="container__row">
 				<div class="container__col-md-3 container__col-sm-12">
-					<div class="article__sidebar">
-						<div class="content__profile__img"></div>
-						<div class="content__profile__descr">
-							<h2>DAVID SPRAY</h2>
-							<p class="subtitle">Computer Science Student</p>
-							<p class="subsubtitle"><i>York St John University</i></p>
-						</div>
-						<div class="content__nav">
-							<ul>
-								<li><a href="#">ABOUT</a></li>
-								<li><a href="#">THINGS I CAN DO</a></li>
-								<li><a href="#">PORTFOLIO</a></li>
-								<li><a href="#">CONTACT</a></li>
-							</ul>
-						</div>
+					<div class="article__sidebar" id="sidebar">
+							<div class="sidebar__profile__img">
+								<img src="img/social/profile.png"></img>
+							</div>
+							<div class="sidebar__profile__descr">
+								<h2>DAVID SPRAY</h2>
+								<p class="subtitle">Computer Science Student</p>
+								<p class="subsubtitle"><i>York St John University</i></p>
+							</div>
+							<div class="sidebar__nav">
+								<ul>
+									<li><a href="#">ABOUT</a></li>
+									<li><a href="#">THINGS I CAN DO</a></li>
+									<li><a href="#">PORTFOLIO</a></li>
+									<li><a href="#">CONTACT</a></li>
+								</ul>
+							</div>
+							<div class="sidebar__social">
+								<a href="https://www.linkedin.com/in/david-spray-aa3b23b0/"><img src="img\social\linkedin\In-White-75px-R.png" alt="LinkedIn"></img></a>
+								<a href="https://github.com/dspray95"><img src="img\social\github\GitHub-Mark-Light-64px.png" alt="GitHub"></img></a>
+							</div>
 					</div>
 				</div>
 				<div class="container__col-md-9 container__col-sm-12">
-					<div class="article__img">
+					<div class="article__main">
+						<div class="main__img">
+						</div>
+						<div class="main__head">
+							<h1>About</h1>
+							<h2>Computer Science student, part-time hill climber </h2>
+							<p>Hello! I'm David, currently in the final year of my computer science undergraduate course at York St John University.
+							Particular areas of interest for myself are software engineering, informatics, and any opportinity I can take to use my computing skills in a positive and meaningful way.
+							Outside of the realm of computers I'm a musician and avid hiker.<br></p>
+						</div>
+						<div class="main__body">
+							<div class="main__body__text">
+								<h2>Things I can do<br></h2>
+								<p>I have experiance working in several fields of computer science, including software design and engineering, web development, informatics, statistical modeling, and bioinformatics.<br></p>
+								<br>
+							</div>
+							<div class="container__row">
+								<div class="container__col-md-4 container__col-sm-4">
+									<div class="main__body__list">
+										<img src="img/skills/skill-code.png" alt="#"></img>
+										<h3>Software</h3>
+										<p>Software Engineering<br>UI/UX<br>Java<br>C#<br>Python<br>Git</p>
+									</div>
+								</div>
+								<div class="container__col-md-4 container__col-sm-4">
+									<div class="main__body__list">
+										<img src="img/skills/skill-web.png" alt="#"></img>
+										<h3>Web</h3>
+										<p>HTML<br>CSS<br>SASS/SCSS<br>PHP<br>JavaScript<br>SQL</p>
+									</div>
+								</div>
+								<div class="container__col-md-4 container__col-sm-4">
+									<div class="main__body__list">
+										<img src="img/skills/skill-informatics.png" alt="#"></img>
+										<h3>Informatics</h3>
+										<p>Neural Networks<br>Genetic Algorithms<br>Mathematical Modeling<br>Bayesian Statistics<br>Bioinformatics<br>R</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main__body">
+							<div class="main__body__text">
+								<h2>Projects</h2>
+								<p>Some info regarding projects...</p>
+							</div>
+							<div class="container__row">
+								<div class="container__col-md-4 container__col-sm-4">
+									<div class="main__body__projects">
+										<img src='img/projects/qube1.png'></img>
+									</div>
+								</div>
+								<div class="container__col-md-8 container__col-sm-8">
+									<div class="main__body__projects__text">
+										<h3>Qubejump</h3>
+										<p>Some info about the sidescroller game here...</p>
+									</div>
+								</div>
+							</div>
+							<div class="container__row">
+								<div class="container__col-md-4 container__col-sm-4">
+									<div class="main__body__projects">
+										<img src='#'></img>
+									</div>
+								</div>
+								<div class="container__col-md-8 container__col-sm-8">
+									<div class="main__body__projects__text">
+										<h3>Kuhker</h3>
+										<p>Some info about the Kuhker here...</p>
+									</div>
+								</div>
+							</div>
+							<div class="container__row">
+								<div class="container__col-md-4 container__col-sm-4">
+									<div class="main__body__projects">
+										<img src='img/projects/swarm.png'></img>
+									</div>
+								</div>
+								<div class="container__col-md-8 container__col-sm-8">
+									<div class="main__body__projects__text">
+										<h3>Swarm AI</h3>
+										<p>Some info about the Swarm AI here...</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main__body">
+							<div class="main__body__text">
+								<h2>Contacts</h2>
+								<p>Contact info and such with an email form</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
