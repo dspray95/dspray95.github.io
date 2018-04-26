@@ -197,12 +197,6 @@ body {
       margin-bottom: 15px;
       width: 100%;
       overflow: hidden; }
-      .main__body__projects img {
-        border-radius: 2%;
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        max-height: 75%; }
       .main__body__projects__text {
         width: 100%;
         display: flex;
@@ -212,6 +206,99 @@ body {
         padding-top: 0; }
         .main__body__projects__text p {
           margin-top: -5px; }
+        .main__body__projects__text a {
+          color: #ff6f69;
+          text-decoration: none; }
+
+.img__qube {
+  background-image: url("../img/projects/qube1.png");
+  background-position: center;
+  background-size: contain;
+  border-radius: 2%;
+  width: 100%;
+  height: 150px;
+  max-height: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  .img__qube:after {
+    display: block;
+    flex-align: center;
+    align-content: center;
+    text-align: center;
+    content: 'Unity, C#';
+    padding-top: 65px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 111, 105, 0.8);
+    color: #FFFFFF;
+    border-radius: 2%;
+    opacity: 0.0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; }
+  .img__qube:hover:after {
+    opacity: 1; }
+.img__kuhker {
+  background-image: url("../img/projects/swarm.png");
+  background-position: center;
+  border-radius: 2%;
+  width: 100%;
+  height: 150px;
+  max-height: 150px;
+  position: relative; }
+  .img__kuhker:after {
+    display: block;
+    flex-align: center;
+    align-content: center;
+    text-align: center;
+    content: 'Android, Machine Learning, Java';
+    padding-top: 55px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 111, 105, 0.8);
+    color: #FFFFFF;
+    border-radius: 2%;
+    opacity: 0.0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; }
+  .img__kuhker:hover:after {
+    opacity: 1; }
+.img__swarm {
+  background-image: url("../img/projects/swarm.png");
+  background-position: center top;
+  background-size: contain;
+  border-radius: 2%;
+  width: 100%;
+  height: 150px;
+  max-height: 150px;
+  position: relative; }
+  .img__swarm:after {
+    display: block;
+    flex-align: center;
+    align-content: center;
+    text-align: center;
+    content: 'Java, Python, Swarm Intelligence';
+    padding-top: 55px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 111, 105, 0.8);
+    color: #FFFFFF;
+    border-radius: 2%;
+    opacity: 0.0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s; }
+  .img__swarm:hover:after {
+    opacity: 1; }
 
 .sidebar__profile__descr {
   width: 100%;
