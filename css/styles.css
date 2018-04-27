@@ -313,7 +313,7 @@ form {
   position: relative;
   width: 100%; }
 
-input[type=text], select, textarea {
+input[type=text], input[type=email], textarea, email {
   position: relative;
   width: 100%;
   /* Full width */
