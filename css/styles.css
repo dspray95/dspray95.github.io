@@ -172,6 +172,9 @@ body {
     .main__body__text {
       padding-left: 50px;
       padding-right: 50px; }
+      .main__body__text a {
+        color: #ff6f69;
+        text-decoration: none; }
     .main__body__list {
       display: flex;
       flex-basis: content;
@@ -211,7 +214,7 @@ body {
           text-decoration: none; }
 
 .img__qube {
-  background-image: url("../img/projects/qube1.png");
+  background-image: url("../img/projects/qube1.PNG");
   background-position: center;
   background-size: contain;
   border-radius: 2%;
@@ -243,7 +246,7 @@ body {
   .img__qube:hover:after {
     opacity: 1; }
 .img__kuhker {
-  background-image: url("../img/projects/swarm.png");
+  background-image: url("../img/projects/swarm.PNG");
   background-position: center;
   border-radius: 2%;
   width: 100%;
@@ -271,7 +274,7 @@ body {
   .img__kuhker:hover:after {
     opacity: 1; }
 .img__swarm {
-  background-image: url("../img/projects/swarm.png");
+  background-image: url("../img/projects/swarm.PNG");
   background-position: center top;
   background-size: contain;
   border-radius: 2%;
@@ -300,6 +303,34 @@ body {
   .img__swarm:hover:after {
     opacity: 1; }
 
+.form__wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: #ff6f69; }
+
+form {
+  position: relative;
+  width: 100%; }
+
+input[type=text], select, textarea {
+  position: relative;
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical; }
+
 .sidebar__profile__descr {
   width: 100%;
   text-align: center;
@@ -326,12 +357,24 @@ body {
   margin-bottom: 0px;
   display: flex;
   align-items: center; }
+  .sidebar__profile__img ::-moz-selection {
+    color: #FFFFFF;
+    background: #FFFFFF; }
+  .sidebar__profile__img ::selection {
+    color: #FFFFFF;
+    background: #FFFFFF; }
   .sidebar__profile__img img {
     border-radius: 50%;
     width: auto;
     max-width: 150px;
     height: auto;
     max-height: 150px; }
+    .sidebar__profile__img img ::-moz-selection {
+      color: #FFFFFF;
+      background: #FFFFFF; }
+    .sidebar__profile__img img ::selection {
+      color: #FFFFFF;
+      background: #FFFFFF; }
 .sidebar__nav {
   width: 100%;
   display: flex;
