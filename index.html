@@ -10,7 +10,8 @@
 		<meta property="og:description" content="Computer Science student at York St John University. Software Developer. Designer">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
-		<script src="js/fix-div.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
 		<script type="application/ld+json">
 		{
 			"@context": "http://schema.org",
@@ -42,10 +43,10 @@
 							</div>
 							<div class="sidebar__nav">
 								<ul>
-									<li><a href="#">ABOUT</a></li>
-									<li><a href="#">THINGS I CAN DO</a></li>
-									<li><a href="#">PORTFOLIO</a></li>
-									<li><a href="#">CONTACT</a></li>
+									<li><a class="jumper" href="#about">ABOUT</a></li>
+									<li><a class="jumper" href="#skills">THINGS I CAN DO</a></li>
+									<li><a class="jumper" href="#projects">PORTFOLIO</a></li>
+									<li><a class="jumper" href="#contacts">CONTACT</a></li>
 								</ul>
 							</div>
 							<div class="sidebar__social">
@@ -55,7 +56,7 @@
 					</div>
 				</div>
 				<div class="container__col-md-9 container__col-sm-12">
-					<div class="article__main">
+					<div class="article__main"  id="about">
 						<div class="main__img">
 						</div>
 						<div class="main__head">
@@ -65,7 +66,7 @@
 							Particular areas of interest for myself are software engineering, informatics, and any opportinity I can take to use my computing skills in a positive and meaningful way.
 							Outside the realm of computers I'm a musician and avid hiker.<br></p>
 						</div>
-						<div class="main__body">
+						<div class="main__body" id="skills">
 							<div class="main__body__text">
 								<h2>Things I can do<br></h2>
 								<p>I have experiance working in several fields of computer science, including software design and engineering, web development, informatics, statistical modeling, and bioinformatics.<br></p>
@@ -83,7 +84,7 @@
 									<div class="main__body__list">
 										<img src="img/skills/skill-web.png" alt="#"></img>
 										<h3>Web</h3>
-										<p>HTML<br>CSS<br>SASS/SCSS<br>PHP<br>JavaScript<br>SQL</p>
+										<p>HTML<br>CSS<br>SASS/SCSS<br>PHP<br>JQuery<br>SQL</p>
 									</div>
 								</div>
 								<div class="container__col-md-4 container__col-sm-4">
@@ -95,7 +96,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="main__body">
+						<div class="main__body" id="projects">
 							<div class="main__body__text">
 								<h2>Projects</h2>
 								<p>Some info regarding projects...</p>
@@ -143,7 +144,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="main__body">
+						<div class="main__body" id="contacts">
 							<div class="main__body__text">
 								<h2>Contact</h2>
 								<p>If you want to contact me about anything feel free, use the form below or reach me at <a href="dspray95@gmail.com">dspray95@gmail.com</a></p>

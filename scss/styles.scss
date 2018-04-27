@@ -1,6 +1,8 @@
-$color__primary: #ff6f69;
-$color__secondary: #1f293a;
+$color__primary: #96d884;
+$color__primary__accent: #b8e0ac;
 $color__primary__highlight: #2d4163;
+$color__primary__hover: rgba(150, 216, 132, 0.8);
+$color__secondary: #1f293a;
 $color__secondary__highlight: #ff6f69;
 $color__tertiary: #dddddd;
 
@@ -247,7 +249,7 @@ body{
 			height:100%;
 			top:0; 
 			left:0;
-			background-color: rgba(255, 111, 105, 0.8);
+			background-color: $color__primary__hover;
 			color: #FFFFFF;
 			border-radius: 2%;
 			opacity: 0.0;
@@ -278,7 +280,7 @@ body{
 			height:100%;
 			top:0; 
 			left:0;
-			background-color: rgba(255, 111, 105, 0.8);
+			background-color: $color__primary__hover;
 			color: #FFFFFF;
 			border-radius: 2%;
 			opacity: 0.0;
@@ -310,7 +312,7 @@ body{
 			height:100%;
 			top:0; 
 			left:0;
-			background-color: rgba(255, 111, 105, 0.8);
+			background-color: $color__primary__hover;
 			color: #FFFFFF;
 			border-radius: 2%;
 			opacity: 0.0;
@@ -411,7 +413,7 @@ input[type=text], input[type=email], textarea, email {
 			}
 		}
 		li {
-			border-bottom: 2px solid #ff918c;
+			border-bottom: 2px solid $color__primary__accent;
 			display: block;
 			:hover{
 				background-color: rgba(255,255,255,0.1);

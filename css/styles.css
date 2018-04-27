@@ -5,7 +5,7 @@ body {
   padding: 0px;
   width: 100%; }
   body h1 {
-    color: #ff6f69;
+    color: #96d884;
     font-size: 4em;
     margin-bottom: -5px; }
   body h2 {
@@ -125,7 +125,7 @@ body {
 .article {
   background-color: #78a1e2; }
   .article__sidebar {
-    background-color: #ff6f69;
+    background-color: #96d884;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -173,7 +173,7 @@ body {
       padding-left: 50px;
       padding-right: 50px; }
       .main__body__text a {
-        color: #ff6f69;
+        color: #96d884;
         text-decoration: none; }
     .main__body__list {
       display: flex;
@@ -210,7 +210,7 @@ body {
         .main__body__projects__text p {
           margin-top: -5px; }
         .main__body__projects__text a {
-          color: #ff6f69;
+          color: #96d884;
           text-decoration: none; }
 
 .img__qube {
@@ -237,7 +237,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 111, 105, 0.8);
+    background-color: rgba(150, 216, 132, 0.8);
     color: #FFFFFF;
     border-radius: 2%;
     opacity: 0.0;
@@ -265,7 +265,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 111, 105, 0.8);
+    background-color: rgba(150, 216, 132, 0.8);
     color: #FFFFFF;
     border-radius: 2%;
     opacity: 0.0;
@@ -294,7 +294,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 111, 105, 0.8);
+    background-color: rgba(150, 216, 132, 0.8);
     color: #FFFFFF;
     border-radius: 2%;
     opacity: 0.0;
@@ -307,7 +307,7 @@ body {
   position: relative;
   width: 100%;
   display: block;
-  background-color: #ff6f69; }
+  background-color: #96d884; }
 
 form {
   position: relative;
@@ -402,7 +402,7 @@ input[type=text], input[type=email], textarea, email {
       .sidebar__nav ul a :visited {
         color: #FFFFFF; }
   .sidebar__nav li {
-    border-bottom: 2px solid #ff918c;
+    border-bottom: 2px solid #b8e0ac;
     display: block; }
     .sidebar__nav li :hover {
       background-color: rgba(255, 255, 255, 0.1); }
