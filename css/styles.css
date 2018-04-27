@@ -155,20 +155,20 @@ body {
     border-bottom: 3px solid #dddddd; }
     .main__head ::-moz-selection {
       color: #FFFFFF;
-      background: #ff6f69; }
+      background: #96d884; }
     .main__head ::selection {
       color: #FFFFFF;
-      background: #ff6f69; }
+      background: #96d884; }
   .main__body {
     width: 100%;
     padding-bottom: 30px;
     border-bottom: 3px solid #dddddd; }
     .main__body ::-moz-selection {
       color: #FFFFFF;
-      background: #ff6f69; }
+      background: #96d884; }
     .main__body ::selection {
       color: #FFFFFF;
-      background: #ff6f69; }
+      background: #96d884; }
     .main__body__text {
       padding-left: 50px;
       padding-right: 50px; }
@@ -338,10 +338,10 @@ input[type=text], input[type=email], textarea, email {
   display: block; }
   .sidebar__profile__descr ::-moz-selection {
     color: #FFFFFF;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .sidebar__profile__descr ::selection {
     color: #FFFFFF;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .sidebar__profile__descr p {
     color: #ffe9e8; }
   .sidebar__profile__descr p.subtitle {
@@ -359,10 +359,10 @@ input[type=text], input[type=email], textarea, email {
   align-items: center; }
   .sidebar__profile__img ::-moz-selection {
     color: #FFFFFF;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .sidebar__profile__img ::selection {
     color: #FFFFFF;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .sidebar__profile__img img {
     border-radius: 50%;
     width: auto;
@@ -371,10 +371,10 @@ input[type=text], input[type=email], textarea, email {
     max-height: 150px; }
     .sidebar__profile__img img ::-moz-selection {
       color: #FFFFFF;
-      background: #FFFFFF; }
+      background: #ffffff; }
     .sidebar__profile__img img ::selection {
       color: #FFFFFF;
-      background: #FFFFFF; }
+      background: #ffffff; }
 .sidebar__nav {
   width: 100%;
   display: flex;
@@ -383,10 +383,10 @@ input[type=text], input[type=email], textarea, email {
   padding-left: 0px; }
   .sidebar__nav ::-moz-selection {
     color: #FFFFFF;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .sidebar__nav ::selection {
     color: #FFFFFF;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .sidebar__nav ul {
     width: 100%;
     margin-left: 0px;
@@ -413,10 +413,10 @@ input[type=text], input[type=email], textarea, email {
   align-items: center; }
   .sidebar__social ::-moz-selection {
     color: #FFFFFF;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .sidebar__social ::selection {
     color: #FFFFFF;
-    background: #FFFFFF; }
+    background: #ffffff; }
   .sidebar__social a {
     margin-left: 20px;
     margin-right: 20px; }

@@ -1,9 +1,9 @@
 $color__primary: #96d884;
 $color__primary__accent: #b8e0ac;
-$color__primary__highlight: #2d4163;
+$color__primary__highlight: #ffffff;
 $color__primary__hover: rgba(150, 216, 132, 0.8);
 $color__secondary: #1f293a;
-$color__secondary__highlight: #ff6f69;
+$color__secondary__highlight: #96d884;
 $color__tertiary: #dddddd;
 
 $color__text__header: #969696;
@@ -351,7 +351,7 @@ input[type=text], input[type=email], textarea, email {
 .sidebar{
 	&__profile{
 		&__descr{
-			@include selection(#FFFFFF, #FFFFFF);
+			@include selection(#FFFFFF, $color__primary__highlight);
 			width: 100%;
 			text-align: center;
 			color: #FFFFFF;
@@ -373,13 +373,13 @@ input[type=text], input[type=email], textarea, email {
 			}
 		}		
 		&__img{
-			@include selection(#FFFFFF, #FFFFFF);
+			@include selection(#FFFFFF, $color__primary__highlight);
 			margin-top: 75px;
 			margin-bottom: 0px;
 			display: flex;
 			align-items: center;
 			img{
-				@include selection(#FFFFFF, #FFFFFF);
+				@include selection(#FFFFFF, $color__primary__highlight);
 				border-radius: 50%;
 				width: auto;
 				max-width: 150px;
@@ -389,7 +389,7 @@ input[type=text], input[type=email], textarea, email {
 		}
 	}
 	&__nav{
-		@include selection(#FFFFFF,  #FFFFFF);
+		@include selection(#FFFFFF,  $color__primary__highlight);
 		width: 100%;
 		display: flex;
 		align-items: center;
@@ -424,7 +424,7 @@ input[type=text], input[type=email], textarea, email {
 		}
 	}
 	&__social{
-		@include selection(#FFFFFF,  #FFFFFF);
+		@include selection(#FFFFFF,  $color__primary__highlight);
 		a{
 			img{
 				width: auto;
